@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="columns is-multiline is-mobile" v-if="memeList && memeList.length > 0">
+    <div class="columns is-multiline" v-if="memeList && memeList.length > 0">
       <div class="column is-one-third"  v-for="meme in memeList" :key="meme.id">
           <div class="card">
             <div class="card-image">
