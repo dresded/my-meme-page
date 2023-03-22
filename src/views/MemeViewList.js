@@ -67,7 +67,7 @@ import axios from 'axios';
         }
         const initialList = JSON.parse(JSON.stringify(this.fullMemesListSearch))
         const numberOfRecordsToDisplay = 6
-        this.pages = Math.round(initialList.length / numberOfRecordsToDisplay)
+        this.pages = Math.round(initialList.length / numberOfRecordsToDisplay) - 1
         const itemsToRemove = (this.page - 1) * numberOfRecordsToDisplay
         if (itemsToRemove > 0) {
           for (let itemRecord = 0; itemsToRemove > itemRecord; itemRecord++) {
